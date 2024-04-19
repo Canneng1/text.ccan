@@ -1,0 +1,23 @@
+<!--pages/new/new.wxml-->
+<text>首页</text>
+<view class="box"> tex1 </view>
+
+<swiper class="text" autoplay      indicator-dots>
+
+<swiper-item >tex1</swiper-item>
+<swiper-item><image src="/image/pij.jpg" mode="widthFix" mode="heightFix">
+</image>
+</swiper-item>
+<swiper-item>tex3</swiper-item>
+<swiper-item>tex4</swiper-item>
+</swiper>
+<scroll-view class="box1" scroll-y="ture"  >
+<view>1</view>
+<view>2</view>
+<view>3</view>
+<view>4</view>
+<view>5</view>
+<view>6</view>
+<view>7</view>
+<view>8</view>
+</scroll-view>>

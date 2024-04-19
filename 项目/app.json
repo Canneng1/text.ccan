@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/new/new",
+    "pages/pos/pos"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "微信Chome",
+    "navigationBarTextStyle": "white"
+  },
+ "tabBar": {
+     "color":"#000",
+     "selectedColor": "#ff0000",
+     "backgroundColor": "#f5f5f5",
+     "borderStyle": "black",
+     "list": [{
+         "pagePath": "pages/index/index",
+         "text": "景点"    
+     },{
+        "pagePath": "pages/new/new",
+        "text": "预约"
+     },
+    {
+      "pagePath": "pages/pos/pos",
+      "text":"导览"
+    }]
+
+
+ },
+  "sitemapLocation": "sitemap.json"
+}

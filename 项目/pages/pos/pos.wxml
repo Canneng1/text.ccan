@@ -1,0 +1,37 @@
+<!--pages/pos/pos.wxml-->
+<!-- 按钮组件 -->
+<!-- <button>默认按钮</button>
+<button type="primary">主色按钮</button>
+<button type="warn">警告按钮</button> -->
+<!-- <button open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 授权获取头像昵称 </button> -->
+<button bindtap="showModal">点击弹出窗口</button>
+
+<view>
+<button class="bth" open-type="chooseAvatar" bindchooseavatar="chooseavatar">
+<image class="avatar" src="{{avatarUrl}}" mode=""/>
+</button>
+<input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+</view>
+<van-dialog id="van-dialog" />
+
+
+<van-cell title="展示弹出层" is-link bind:click="showPopup" />
+<van-popup show="{{ show }}" bind:close="onClose">内容</van-popup>
+<van-popup
+  show="{{ show }}"
+  closeable
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose"
+/>
+
+<view>
+  <button open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">点击获取头像</button>
+  <!-- <image class="avatar" src="{{avatarUrls}}" mode=""/> -->
+</view>
+
+<!-- ///////////////////////////////////// -->
+<image class="avatar" src="{{avatarUrls}}" mode=""/>
+
+<button id="button1" bindtap="onButton1Click">按钮1</button>
+<button id="button2" bindtap="onButton2Click">按钮2</button>

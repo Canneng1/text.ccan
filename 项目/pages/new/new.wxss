@@ -1,0 +1,20 @@
+/* pages/new/new.wxss */
+.box{
+    background-color: palevioletred;
+    height: 200rpx;
+}
+text{
+    background-color:rebeccapurple;
+}
+.text{
+  background-color: paleturquoise;
+}
+.scrolls{
+  margin: 20px;
+
+}
+.box1{
+  border: 1px solid red;
+  width: 60px;
+height: 100px;
+}
